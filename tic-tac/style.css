@@ -1,0 +1,41 @@
+body {
+	/*background-image: url("background.jpeg");*/
+	background:white;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	font-family: 'Lato', sans-serif;
+	border-radius: 30px; 
+
+
+	text-align: center; 
+}
+h1 {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 300px; 
+	margin-bottom: 0;
+	width: 500px;
+	text-align: center; 
+	background: #F64747;
+	color:white; 
+	font-family: "Helvetica Neue",Helvetica,"Myriad Pro","Lucida Grande",sans-serif
+	font-size: 80px;
+	font-weight: 100;
+	text-transform: uppercase;
+	border-radius: 12px; 
+
+}
+#content {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px; 
+	width: 700px;
+	font-weight: 100;
+	font-size: 50px;
+	color:white;
+	text-align: center; 
+	background: #8E44AD;
+	border-radius: 12px; 
+	
+}
