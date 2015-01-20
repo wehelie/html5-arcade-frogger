@@ -131,7 +131,7 @@ enemy3 = new Enemy(locale[4],locale[5]);
 
 allEnemies=[enemy1,enemy2,enemy3];
 
-var gem = new Gem(0,0);
+var gem = new Gem(300,200);
 //enemy2 = new Enemy(locale[2],locale[3]);
 //enemy3 = new Enemy(locale[4],locale[5]);
 
