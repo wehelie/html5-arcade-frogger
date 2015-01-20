@@ -7,9 +7,31 @@
 </head>
 <body>
 	<!-- keep track of the game score -->
-	<div id="health"></div>
+	<div>
+		
+		<h1 id="countdown"></h1>	
+		<h1>Score:</h1>
+		<span id="health"></span>
+
+	</div>
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
+    <script>
+
+    	var seconds = 30; 
+    	var counter; 
+    	var time = document.getElementById('countdown');
+    	function countDown() {
+    		seconds --;
+    		time.innerHTML = seconds + ' ' + 'seconds remaining'; 
+    		if ( seconds == 0) {
+    			clearInterval(counter); 
+    		}
+    	}
+
+    	counter = setInterval('countDown()', 1000); 
+
+    </script>
 </body>
 </html>

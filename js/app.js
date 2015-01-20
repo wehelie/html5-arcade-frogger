@@ -67,17 +67,24 @@ Player.prototype.update = function(){
 
                     }
                 }
-    
+    var lives = 3; 
     if(this.y == -10){
         this.score += 1; 
+        $('#health').html('<p>'+ this.score + '</p>');
         ctx.font = "36px Arial";
         console.log(this.score);
         ctx.fillText(this.score, 80, 20);
         player.reset();
+        } else {
+            lives--; 
         }
-     
+       if (this.score == 0) {
+        $('#health').html('<p>USE THE KEYS TO START EH G</p>');
+    }
         
     }
+
+  
    
 
 
@@ -130,7 +137,8 @@ enemy3 = new Enemy(locale[4],locale[5]);
    
 
 allEnemies=[enemy1,enemy2,enemy3];
-
+var gemLocationX = [0, 300, 400, 500];
+var gemLocationY = [0, 150, 200, 390]; 
 var gem = new Gem(300,200);
 //enemy2 = new Enemy(locale[2],locale[3]);
 //enemy3 = new Enemy(locale[4],locale[5]);
